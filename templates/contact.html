@@ -1,66 +1,81 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank MoneyMoo</title>
+  <link rel="stylesheet" href="../static/cssDesign.css">
+  <script src="../static/MooJS.js"> </script>
+</head>
+<body>
+  
     <center>
-    <head >
-        <title>contact</title>
-        <b>
-        <span style="color:#FF0000 ;font-size: 50px">C</span>
-        <span style="color:#66CC66 ;font-size: 50px">o</span>
-        <span style="color:#FF9966 ;font-size: 50px">n</span>
-        <span style="color:#ff6bc6 ;font-size: 50px">t</span>
-        <span style="color:#FF0066 ;font-size: 50px">a</span>
-        <span style="color:#3617a7 ;font-size: 50px">c</span>
-        <span style="color:#e4e009 ;font-size: 50px">t     </span>
-        <span style="color:#62d122 ;font-size: 50px">U</span>
-        <span style="color:#d87f36 ;font-size: 50px">s</span>
-        <span style="color:#570b7a ;font-size: 50px">:</span>
-        <span style="color:#899efa ;font-size: 50px">)</span>
-        </b>
-      </head>
+        <header>
+            <div id="imageheader"> <img id="cowLogo" ; src="../static/logo.jpg" alt="oops"></div>
+            <ul id="nav-bar">
+                <li><a href="../templates/HomePage.html" s>Home</a>
+                </li>
+                <li><a href="../templates/workingOnIt.html">About us</a>
+                </li>
+                <li><a href="../templates/workingOnIt.html">Join us</a>
+                </li>
+                <li><a href="contact.html">Contact</a>
+                </li>
+          </ul>
+        </header>
 
-      <form action="" id="ContactForm";>
-          <h4> Please fill in your information in the form below </h4>
-          <h4> * is required </h4>
-        
-        <div style="margin: 5px;">
-        <label for="firstName">First Name *</label><br>
-        <input type="text" id="firstName" name="firstName" placeholder="FirstName" required>
-        </div>
-        <div style="margin: 5px;">
-            <label for="lastName">Last Name *</label><br>
-            <input type="text" id="lastName" name="lastName" placeholder="LastName" required>
-        </div>
-        <div style="margin: 5px;">
-            <label for="ID">ID Number * </label><br>
-            <input type="number" id="ID" name="ID" placeholder="ID" minlength="8" maxlength="9" required>
-        </div>
-        <div style="margin: 5px;">
-            <label for="email">Email *</label><br>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-        </div>
-        <div style="margin: 5px;">
-            <label for="phoneNumber">Phone Number</label><br>
-            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="PhoneNumber" minlength="9" maxlength="12">
-        </div>
-        <div style="margin: 20px;">
-            <label for="whereFrom">How did you hear about us?:</label>
-
-            <select name="options" id="options" required>
-                <option value="friendsORfamily">friends or family</option>
-                <option value="Facebook">Facebook</option>
-                <option value="Instagram">Instagram</option>
-                <option value="TV">TV</option>
-                <option value="other">other</option>
-            </select>
-        </div>
-        <input type="submit" value="Submit" style="margin: 10px;">  
-</form>
+      <form action="" id="ContactForm" onsubmit="sayThankU()">
+        <style>    
+            body{background:url(../static/money.jpg);}
+            </style>
+          <h4 id="instructions"> <p>Please fill in your information in the following form </p> <p>(* is required)</p></h4>
+        <h4 id="questions"> 
+            <div id="Q">
+            <label for="firstName">First Name *</label><br>
+            <input type="text" id="firstName" name="firstName" placeholder="FirstName" required>
+            </div>
+            <div id="Q">
+                <label for="lastName">Last Name *</label><br>
+                <input type="text" id="lastName" name="lastName" placeholder="LastName" required>
+            </div>
+            <div id="Q">
+                <label for="ID">ID Number * </label><br>
+                <input type="number" id="ID" name="ID" placeholder="ID" minlength="8" maxlength="9" required>
+            </div>
+            <div id="Q">
+                <label for="email">Email *</label><br>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div id="Q">
+                <label for="phoneNumber">Phone Number</label><br>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="PhoneNumber" minlength="9" maxlength="12">
+            </div>
+            <div id="Q">   
+                <label for="whereFrom">How did you hear about us?:</label>
+                <select name="options" id="options" required>
+                    <option value="friendsORfamily">friends or family</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="TV">TV</option>
+                    <option value="other">other</option>
+                </select>
+            </div> 
+        </h4>
+            <input type="submit" value="Submit"  id="submit">            
+</form> 
 </center>
-<footer>
-    <span>
-        <a style="font-size: 20px"; href="file:///C:/Users/hilae/Desktop/WEB/Hila.Shpigelman/templates/HomePage.html"> Home </a>
-          | 
-        <a style="font-size: 20px"; href="file:///C:/Users/hilae/Desktop/WEB/Hila.Shpigelman/templates/contact.html"> Contact Us</a>
-    </span>
-</footer>
+    <footer id="footer">
+        <span>
+            <h2>if you have any question please contact us: 03-9123456</h2>
+        </span>
+    </footer>
+
+</body>
 </html>
+
+
+
+
+  
+
