@@ -32,6 +32,15 @@ a{
     font-size: 18px;
 }
 
+/* the current page */
+.active {
+    border: dashed #1ab115 5px;
+  }
+  
+  li {
+      display: inline;
+  }
+
 #MainPage{
     display: grid;
     grid-template-areas: 'extra Main Main' 
@@ -86,12 +95,12 @@ a{
 
 #ContactForm{
     display: grid;
-    grid-template-areas: 'Header Header Header'
-                         'Main Main Main' 
-                         'Main Main Main' 
-                         'button button button';
+    grid-template-areas:'Main Main Header' 
+                        'Main Main Header' 
+                        'Main Main Header' 
+                        'Main Main button';
     background-color: aliceblue;
-    width: 50%;
+    width: 80%;
     margin: 10px;
 }
 
@@ -162,11 +171,11 @@ a{
 @media only screen and (max-width: 550px){
     #ContactForm{
         display: grid;
-        grid-template-areas: 'Main Main Header' 
-                             'Main Main Header' 
-                             'Main Main Header' 
-                             'Main Main button';
-        width: 100%;
+        grid-template-areas: 'Header Header Header'
+                             'Main Main Main' 
+                             'Main Main Main' 
+                             'button button button';
+        width: 50%;
     }
     #instructions{
         margin-top: auto;
