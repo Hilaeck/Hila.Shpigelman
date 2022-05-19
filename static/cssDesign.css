@@ -32,6 +32,11 @@ a{
     font-size: 18px;
 }
 
+a:hover{
+    color: rgb(238, 241, 9)
+}
+
+
 /* the current page */
 .active {
     border: dashed #1ab115 5px;
